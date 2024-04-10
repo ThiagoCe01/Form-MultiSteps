@@ -65,9 +65,16 @@ background: #e7e7e7;
     justify-content: space-between;
     flex: 1 1 400;
     padding: 5px;
-    margin: 20px 0 0 0;
-    
-    
+    margin-top: 20px ;
+}
+.labelform2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 400;
+    padding: 5px;
+    margin-top: 20px ;
 }
 .textTit{
     width: 450px;
@@ -75,6 +82,8 @@ background: #e7e7e7;
     font-weight: 600;
     padding:  5px;
     font-size: 0.9rem;
+    line-height: 1rem;
+    margin-bottom: 5px;
 }
 .Titlefilho{
     width: 100%;
@@ -189,16 +198,17 @@ justify-content: center;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   margin-bottom: 20px;
+   
    
 }
 .numberfilho {
 display: flex;
 width:60% ;
 flex-direction: column;
-justify-content: center;
-flex-direction: column;
-align-items: center;
+    justify-content: space-between;
+    flex: 1 1 400;
+    padding: 5px;
+    margin-top: 9px ;
 
 }
 .numberfilho, input[type="number"]{
@@ -213,10 +223,11 @@ align-items: center;
 .agefilho{
 width: 30%;
 display: flex;
-justify-content: center;
 flex-direction: column;
-align-items: center;
-margin-left:  15px;
+justify-content: space-between;
+flex: 1 1 400;
+padding: 5px;
+margin-top: 9px ;
 }
 .justificativa{
     width: 100%;

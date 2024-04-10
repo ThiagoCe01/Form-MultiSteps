@@ -1,6 +1,6 @@
 
 var currentStep = 1;
-      var totalSteps = 3;
+      var totalSteps = 6;
       function nextStep() {
           if (currentStep < totalSteps) {
               var currentSection = document.getElementById("step" + currentStep);

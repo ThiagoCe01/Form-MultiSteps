@@ -131,6 +131,7 @@
             </div>
         </div>
         </section>
+
          <section class="sectionform" id="step2" style="display: none">
             <div class="blockform">
             <span class="buletStep"><span class="numberBulets">2</span> Sobre Relacionamento</span>
@@ -258,80 +259,236 @@
            
         </div>
         </section> 
-        <section class="sectionform" id="step3" style="display: none">
-            <div class="blockform">
+        
+      <section class="sectionform" id="step3" style="display: none;">
+        <div class="blockform">
             <span class="buletStep"><span class="numberBulets">3</span> Sobre seu histórico como Cristão</span>
 
-            <label for="" class="labelform">
-                <p class="textTit">Qual foi sua data de conversão </p>
-                <input type="date" id="dataconversao" placeholder="dataconversao" >
-            </label>
-            <label for="" class="labelform">
-                <p class="textTit">Qual foi sua data de batismo nas águas </p>
-                <input type="text" id="databatismo"  >
-            </label>
-            <label for="" class="labelform" id="labelname">
-                <p class="textTit">Qual foi sua ultima igreja? </p>
-                <input type="text" id="church" placeholder="church" >
-            </label>
-            <label for="" class="labelform">
-                <p class="textTit">Por qual motivo você saiu dela? </p>
-                <input type="text" id="motivosaida"  >
-            </label>
-            <label for="" class="labelform" >
-                <p class="textTit">Você é dizimista fiel?</p>
-                <select name="" id="dizimista" name="dizimista" onchange="mostrarConjuge(event)">
+      <label for="" class="labelform">
+          <p class="textTit">Qual foi sua data de conversão </p>
+          <input type="date" id="dataconversao" placeholder="dataconversao" >
+      </label>
+      <label for="" class="labelform">
+          <p class="textTit">Qual foi sua data de batismo nas águas </p>
+          <input type="text" id="databatismo"  >
+      </label>
+      <label for="" class="labelform" id="labelname">
+          <p class="textTit">Qual foi sua ultima igreja? </p>
+          <input type="text" id="church" placeholder="church" >
+      </label>
+      <label for="" class="labelform">
+          <p class="textTit">Por qual motivo você saiu dela? </p>
+          <input type="text" id="motivosaida"  >
+      </label>
+      <label for="" class="labelform" >
+          <p class="textTit">Você é dizimista fiel?</p>
+          <select name="" id="dizimista" name="dizimista" onchange="mostrarConjuge(event)">
+              <option value=""></option>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>                   
+          </select>
+      </label>
+      <label for="" class="labelform2">
+          <p class="textTit">Quais foram as igrejas que você foi membro desde a sua conversão? </p>
+          <input type="textarea" id="igrejaanterior"  >
+          
+      </label>
+             
+    
+      </label>        
+      <label for="" class="labelform2">
+          <p class="textTit">Você exerceu algum cargo de liderança nas igrejas que passou? </p>
+          <input type="textarea" id="cargo"  >
+      </label>
+      <label for="" class="labelform" >
+          <p class="textTit">Você foi separado/consagrado a algum cargo ministerial?</p>
+          <select id="separado" name="separado">
+              <option value=""></option>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>                   
+          </select>
+      </label>
+      <label for="" class="labelform">
+          <p class="textTit">Qual era sua posição? </p>
+          <input type="text" id="posicaoigreja" name="posicaoigreja"  >
+      </label>
+      <label for="" class="labelform">
+          <p class="textTit">Quais eram as suas atividades? </p>
+          <input type="text" id="atividadesigreja" name="atividadesigreja"  >
+      </label>
+      <label for="" class="labelform" >
+        <p class="textTit">Você é ofertante?</p>
+        <select name="" id="ofertante" name="ofertante" onchange="mostrarConjuge(event)">
+            <option value=""></option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>                   
+        </select>
+    </div>
+    <div class="btnssecionone">                
+        <button type="button" onclick="previousStep()">Anterior</button>
+        <button type="button" onclick="nextStep()">Próximo</button>
+   </div>           
+      </section>
+     
+        <section class="sectionform" id="step4" style="display: none">
+            <div class="blockform">
+                <span class="buletStep"><span class="numberBulets">4</span> Sobre você como um cristão que congrega</span>
+            
+                <label for="" class="labelform" >
+                    <p class="textTit">Tem algum problema com liderança, hierarquia e pastoreio?</p>
+                   <select name="vicenciaigreja" id="vicenciaigreja">
                     <option value=""></option>
                     <option value="sim">Sim</option>
-                    <option value="nao">Não</option>                   
-                </select>
+                    <option value="nao">Não</option>
+                   </select>
+                </label>
             </label>
-            <label for="" class="labelform">
-                <p class="textTit">Quais foram as igrejas que você foi membro desde a sua conversão? </p>
-                <input type="textarea" id="igrejaanterior"  >
-                
-            </label>
+                     
+            <label for="" class="labelform" >
+                    <p class="textTit">Tem algum problema em ser exortado quando alguma conduta estiver fora dos padrões bíblicos?</p>
+                    <select name="conversaigreja" id="conversaigreja"  >
+                        <option value=""></option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>                
+                    </select>
+                </label>
+            <label for="" class="labelform" >
+                    <p class="textTit"> Tem o hábito de informar seus pastores sobre ausências na adoração coletiva?</p>
+                    <select name="hatibosigreja" id="hatibosigreja"  >
+                        <option value=""></option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>                
+                    </select>
+                </label>
+            <label for="" class="labelform" >
+                    <p class="textTit"> Você se considera um discípulo de Jesus com coração pastoreável/ensinável?</p>
+                    <select name="discipuloigreja" id="discipuloigreja"  >
+                        <option value=""></option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>                
+                    </select>
+                </label>
+            <label for="" class="labelform" >
+                    <p class="textTit">Tem o hábito de participar de cultos de estudo bíblico e EBD’s?</p>
+                    <select name="participacaoebd" id="participacaoebd"  >
+                        <option value=""></option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>                
+                    </select>
+                </label>
+            <label for="" class="labelform" >
+                    <p class="textTit"> Tem o hábito de participar de cultos de oração?</p>
+                    <select name="participacaoculto" id="participacaoculto"  >
+                        <option value=""></option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>                
+                    </select>
+                </label>
+            <label for="" class="labelform" >
+                    <p class="textTit">Tem o hábito de buscar aconselhamento pastoral?</p>
+                    <select name="aconselhamentoigreja" id="aconselhamentoigreja"  >
+                        <option value=""></option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>                
+                    </select>
+                </label>
+            <label for="" class="labelform" >
+                    <p class="textTit">Você preza pelo desenvolvimento da vida em comunidade, do congregar e servir uns aos outros?</p>
+                    <select name="comunhaoigreja" id="comunhaoigreja"  >
+                        <option value=""></option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>                
+                    </select>
+                </label>
+            </sectino>
+            
                    
-            <label for="" class="labelform" >
-                <p class="textTit">Você é ofertante?</p>
-                <select name="" id="ofertante" name="ofertante" onchange="mostrarConjuge(event)">
-                    <option value=""></option>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>                   
-                </select>
-            </label>        
-            <label for="" class="labelform">
-                <p class="textTit">Você exerceu algum cargo de liderança nas igrejas que passou? </p>
-                <input type="textarea" id="cargo"  >
-            </label>
-            <label for="" class="labelform" >
-                <p class="textTit">Você foi separado/consagrado a algum cargo ministerial?</p>
-                <select id="separado" name="separado">
-                    <option value=""></option>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>                   
-                </select>
-            </label>
-            <label for="" class="labelform">
-                <p class="textTit">Qual era sua posição? </p>
-                <input type="text" id="posicaoigreja" name="posicaoigreja"  >
-            </label>
-            <label for="" class="labelform">
-                <p class="textTit">Quais eram as suas atividades? </p>
-                <input type="text" id="atividadesigreja" name="atividadesigreja"  >
-            </label>
-            </div>            
-        <div class="btnssecionone">
-                
-                    <button type="button" onclick="previousStep()">Anterior</button>
-              <button type="submit">Enviar</button>
-                
-                
-            </div>
+            <div class="btnssecionone">                
+                 <button type="button" onclick="previousStep()">Anterior</button>
+                 <button type="button" onclick="nextStep()">Próximo</button>
+            </div>                   
         </div>
         </section> 
-       
-       
+
+        <section class="sectionform" id="step5" style="display: none">
+            <div class="blockform">
+                <span class="buletStep"><span class="numberBulets">5</span> Sobre suas convicções</span>
+                <label for="" class="labelform2">
+                    <p class="textTit">O que te faz convicto de que você é um verdadeiro discípulo de Jesus? </p>
+                    <input type="textarea" id="secao5Pergunta1" name="conviccaodiscipulo" >
+                </label>
+                <label for="" class="labelform2">
+                    <p class="textTit">Como você define o evangelho?</p>
+                    <input type="textarea" id="secao5Pergunta2" name="definicaoevangelho" >
+                </label>
+                <label for="" class="labelform2">
+                    <p class="textTit">Quais são os frutos do Espírito que podem ser claramente percebidos em sua vida?</p>
+                    <input type="textarea" id="secao5Pergunta3" name="frutosevangelho" >
+                </label>
+                <label for="" class="labelform" >
+                    <p class="textTit">Você tem o hábito de evangelizar?</p>
+                   <select name="habitoevangelizar" id="secao5Pergunta3">
+                    <option value=""></option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                   </select>
+                </label>
+                <label for="" class="labelform" >
+                    <p class="textTit">Você tem o hábito de jejuar?</p>
+                   <select name="habitoevangelizar" id="secao5Pergunta4">
+                    <option value=""></option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                   </select>
+                </label>
+                <label for="" class="labelform" >
+                    <p class="textTit">Você já leu a bíblia toda alguma vez?</p>
+                   <select name="leituraanual" id="secao5Pergunta5">
+                    <option value=""></option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                   </select>
+                </label>
+                <label for="" class="labelform">
+                    <p class="textTit">Quais os últimos 3 livros que você leu que edificaram a sua fé?</p>
+                    <input type="text" id="secao5Pergunta6" name="livrosbiblia" >                
+                </label>
+                <label for="" class="labelform2">
+                    <p class="textTit">Como você cuida do desenvolvimento da sua fé e da sua comunhão com Deus?</p>
+                    <input type="textarea" id="secao5Pergunta7" name="desenvolvimentodafe" >                
+                </label>
+                <label for="" class="labelform2">
+                    <p class="textTit">Existe algum pecado contra qual você tenha lutado nos últimos anos?</p>
+                    <input type="textarea" id="secao5Pergunta8" name="lutapessoal" >                
+                </label>
+                <label for="" class="labelform2">
+                    <p class="textTit">Você tem convicções teológicas? Quais seriam?</p>
+                    <input type="textarea" id="secao5Pergunta9" name="conviccao" >                
+                </label>     
+
+            <div class="btnssecionone">                
+                 <button type="button" onclick="previousStep()">Anterior</button>
+                 <button type="button" onclick="nextStep()">Próximo</button>
+            </div>                   
+        </div>
+        </section> 
+
+        <section class="sectionform" id="step6" style="display: none;">
+            <div class="blockform">
+                <span class="buletStep"><span class="numberBulets">6</span> Suas considerações</span>
+
+                <label for="" class="labelform2">
+                    <p class="textTit">Tem alguma coisa a mais que você queria nos contar? de Jesus? </p>
+                    <input type="textarea" id="secao6Pergunta1" name="consideracoes" >
+                </label>    
+            </div> 
+            <div class="btnssecionone">                
+                <button type="button" onclick="previousStep()">Anterior</button>
+                <button type="submit" onclick="submitForm()">Enviar</button>
+           </div>           
+              </section>   
+        </section>
+
     </form>
 </header>
 </div>
