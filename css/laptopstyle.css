@@ -1,0 +1,546 @@
+@media  only screen and (min-width:769px) and (max-width: 1024px) and (orientation:landscape){
+    
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Titillium Web", sans-serif;
+    }
+    :root{
+        --colorOne:#BDBEBF;
+        --colorTwo: #525559;
+        --colorTree: #D9D9D9
+    }
+    body{
+    background: #e7e7e7;
+    }
+    .layoutform{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .formcontainer{
+        max-width: 1200px;
+     
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5%;
+        
+    }
+    .bulet{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .buletStep{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        display: flex;
+        font-weight: 500;
+        margin: 10px 0 50px 0;
+        flex-direction: column;
+    
+    }
+    .numberBulets{
+        width: 50px;
+        height:50px;
+        border-radius: 50px;
+        background-color: var(--colorTwo);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px;
+        color: var(--colorOne);
+    }
+    .labelform{
+        width: 100%;
+      
+        
+        margin-top: 10px ;
+    }
+    .labelform2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 1 auto;
+        
+        margin-top: 20px ;
+       
+    }
+    .textTit{
+        width: 100%;
+        height: 5vh;
+        font-weight: 600;
+        padding:  5px;
+        font-size: 0.9rem;
+        line-height: 1rem;
+        margin-bottom: 5px;
+    }
+    .Titlefilho{
+        width: 100%;
+        padding: 0 5px;
+        height: 4vh;
+        font-weight: 600;   
+        display: flex;
+        font-size: 0.9rem;
+    }
+    .textNumb{
+        width: 100%;
+        padding: 0 5px;
+        height: 4vh;
+        font-weight: 600;   
+        display: flex;
+        font-size: 0.9rem;
+    }
+    
+    input[type="text"], 
+    [type="tel"],
+    [type="date"],
+    [type="email"], 
+    select
+    {
+        min-width: 100%;
+        border-radius: 3px;
+        border: 0.5px  var(--colorTwo);
+        height: 4vh;
+        color: var(--colorTwo);
+        font-size: 1rem;
+        padding: 0 5px;
+        border: none;
+        display: flex;
+        margin: 2px 0;
+        
+    }
+    input[type="number"]{
+        width: 100%;
+        height: 4vh;
+        border-radius: 3px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    button{
+        padding: 10px;
+        font-size: 1rem;
+        width: 100px;
+        border-radius: 3px;
+        border: none;
+        background-color: var(--colorTwo);
+        color: var(--colorOne);
+        cursor: pointer;
+    }
+    
+    .form{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .sectionform{
+        max-width:100%;
+        min-width: 370px;
+        height: auto;
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      
+    }
+    
+    .blockform{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+      
+    }
+    
+    .addres{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        align-items: center;
+        justify-content: space-around;
+    }
+    .sectionvalue{
+        width: 100%;
+        height: 3vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 1.1rem;
+        
+    }
+    .btnssecionone{
+        width: 100%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        
+        margin-top: 50px ;
+        flex-wrap: wrap;
+    }
+    #btnprimary{
+        width: 100%;
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        
+        margin-top: 50px ;
+        flex-wrap: wrap;
+    }
+   
+     
+    .inforFilhos{
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       
+       
+    }
+    .numberfilho {
+    display: flex;
+    width:60% ;
+    flex-direction: column;
+        justify-content: space-between;
+        flex: 1 1 400;
+        padding: 5px;
+        margin-top: 9px ;
+    
+    }
+    .numberfilho, input[type="number"]{
+        width: 100%;
+        border: none;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .agefilho{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 400;
+    padding: 5px;
+    margin-top: 9px ;
+    }
+    .justificativa{
+        width: 100%;
+        padding: 2% 0;
+    }
+    
+    input[type="textarea"]::placeholder{
+        padding: 1%;
+    }
+    textarea{
+        border: none;
+        padding: 2%;
+        border-radius: 5px;
+          
+          
+          
+      }
+    
+    }
+@media only  screen and (min-width:769px) and (max-width: 1024px) and (orientation:portrait){
+    
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Titillium Web", sans-serif;
+    }
+    :root{
+        --colorOne:#BDBEBF;
+        --colorTwo: #525559;
+        --colorTree: #D9D9D9
+    }
+    body{
+    background: #e7e7e7;
+    }
+    .layoutform{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .formcontainer{
+        max-width: 1200px;
+     
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 5%;
+        
+    }
+    .bulet{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .buletStep{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        display: flex;
+        font-weight: 500;
+        margin: 10px 0 50px 0;
+        flex-direction: column;
+    
+    }
+    .numberBulets{
+        width: 50px;
+        height:50px;
+        border-radius: 50px;
+        background-color: var(--colorTwo);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px;
+        color: var(--colorOne);
+    }
+    .labelform{
+        width: 100%;
+      
+        
+        margin-top: 10px ;
+    }
+    .labelform2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 1 auto;
+        
+        margin-top: 20px ;
+       
+    }
+    .textTit{
+        width: 100%;
+        height: 5vh;
+        font-weight: 600;
+        padding:  5px;
+        font-size: 0.9rem;
+        line-height: 1rem;
+        margin-bottom: 5px;
+    }
+    .Titlefilho{
+        width: 100%;
+        padding: 0 5px;
+        height: 4vh;
+        font-weight: 600;   
+        display: flex;
+        font-size: 0.9rem;
+    }
+    .textNumb{
+        width: 100%;
+        padding: 0 5px;
+        height: 4vh;
+        font-weight: 600;   
+        display: flex;
+        font-size: 0.9rem;
+    }
+    
+    input[type="text"], 
+    [type="tel"],
+    [type="date"],
+    [type="email"], 
+    select
+    {
+        min-width: 100%;
+        border-radius: 3px;
+        border: 0.5px  var(--colorTwo);
+        height: 4vh;
+        color: var(--colorTwo);
+        font-size: 1rem;
+        padding: 0 5px;
+        border: none;
+        display: flex;
+        margin: 2px 0;
+        
+    }
+    input[type="number"]{
+        width: 100%;
+        height: 4vh;
+        border-radius: 3px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    button{
+        padding: 10px;
+        font-size: 1rem;
+        width: 100px;
+        border-radius: 3px;
+        border: none;
+        background-color: var(--colorTwo);
+        color: var(--colorOne);
+        cursor: pointer;
+    }
+    
+    .form{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .sectionform{
+        max-width:100%;
+        min-width: 370px;
+        height: auto;
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      
+    }
+    
+    .blockform{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+      
+    }
+    
+    .addres{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        align-items: center;
+        justify-content: space-around;
+    }
+    .sectionvalue{
+        width: 100%;
+        height: 3vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 1.1rem;
+        
+    }
+    .btnssecionone{
+        width: 100%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        
+        margin-top: 50px ;
+        flex-wrap: wrap;
+    }
+    #btnprimary{
+        width: 100%;
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        
+        margin-top: 50px ;
+        flex-wrap: wrap;
+    }
+   
+     
+    .inforFilhos{
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       
+       
+    }
+    .numberfilho {
+    display: flex;
+    width:60% ;
+    flex-direction: column;
+        justify-content: space-between;
+        flex: 1 1 400;
+        padding: 5px;
+        margin-top: 9px ;
+    
+    }
+    .numberfilho, input[type="number"]{
+        width: 100%;
+        border: none;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .agefilho{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 400;
+    padding: 5px;
+    margin-top: 9px ;
+    }
+    .justificativa{
+        width: 100%;
+        padding: 2% 0;
+    }
+    input[type="textarea"]{
+        width: 100%;
+        height: 15vh;
+        border: none;
+        flex: 1 1 auto;
+        
+    }
+    input[type="textarea"]::placeholder{
+        padding: 1%;
+    }
+    textarea{
+        border: none;
+        padding: 2%;
+        border-radius: 5px;
+          
+          
+          
+      }
+    
+    }
+
+    
+    
+    
