@@ -22,6 +22,8 @@ align-items: center;
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    height: auto;
 }
 .formcontainer{
     max-width: 1200px;
@@ -30,7 +32,7 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    
     padding: 5%;
     
 }
@@ -45,6 +47,17 @@ align-items: center;
     align-items: center;
     flex-direction: column;
 }
+.bkform{
+    width: 100%;
+    height: 30vh;
+ 
+
+}
+.bkform img{
+    width: 100%;
+    object-fit: cover;
+    
+}
 .buletStep{
     width: 100%;
     text-align: center;
@@ -54,7 +67,7 @@ align-items: center;
     font-size: 2rem;
     display: flex;
     font-weight: 500;
-    margin: 50px 0 100px 0;
+    margin: 25px 0 50px 0;
 
 }
 .numberBulets{
@@ -115,21 +128,76 @@ align-items: center;
 }
 
  
-[type="tel"],
-[type="date"],
-[type="email"],
-[type="text"],
+[type="tel"]{
+    min-width: 100%;
+    border-radius: 3px;
+    border: 1px solid var(--colorTwo);
+    height: 4vh;
+    color: var(--colorTwo);
+    
+    font-size: 1rem;
+    padding: 0 5px;
+ 
+    display: flex;
+    
+    
+}
+[type="date"]{
+    min-width: 100%;
+    border-radius: 3px;
+    border: 1px solid var(--colorTwo);
+    height: 4vh;
+    color: var(--colorTwo);
+    
+    font-size: 1rem;
+    padding: 0 5px;
+ 
+    display: flex;
+    
+    
+}
+
+[type="email"]{
+    min-width: 100%;
+    border-radius: 3px;
+    border: 1px solid var(--colorTwo);
+    height: 4vh;
+    color: var(--colorTwo);
+    
+    font-size: 1rem;
+    padding: 0 5px;
+ 
+    display: flex;
+    
+    
+}
+
+[type="text"]{
+    min-width: 100%;
+    border-radius: 3px;
+    border: 1px solid  var(--colorTwo);
+    height: 4vh;
+    color: var(--colorTwo);
+    
+    font-size: 1rem;
+    padding: 0 5px;
+ 
+    display: flex;
+    
+    
+}
 
 select
 {
     min-width: 100%;
     border-radius: 3px;
-    border: 0.5px  var(--colorTwo);
+    border: 1px solid var(--colorTwo);
     height: 4vh;
     color: var(--colorTwo);
+    
     font-size: 1rem;
     padding: 0 5px;
-    border: none;
+ 
     display: flex;
     
     
@@ -138,7 +206,7 @@ input[type="number"]{
     width: 100%;
     height: 4vh;
     border-radius: 3px;
-    border: none;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,7 +228,10 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;   
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 10px;   
+    background: #fff;
 }
 
 
@@ -263,7 +334,7 @@ margin-top: 9px ;
     padding: 2% 0;
 }
 textarea{
-  border: none;
+  /* border: none; */
   padding: 2%;
   border-radius: 5px;
     
